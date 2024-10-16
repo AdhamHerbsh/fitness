@@ -508,7 +508,7 @@ $query_chats = mysqli_query($db, $sql_chats);
                 }
                 ?>
               </div>
-              <div class="type_msg bg-light p-2 rounded-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="type_msg bg-light p-2 rounded-4">
                 <div class="input_msg_write">
                   <input id="content" name="question" type="text" class="write_msg" placeholder="Ask a Question" />
                   <button class="msg_send_btn" id="msg_send_btn" name="save_btn" type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
