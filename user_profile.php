@@ -3,20 +3,6 @@ include("conn.php");
 $id = $_SESSION['id'];
 
 
-$name = "";
-$email = "";
-$password = "";
-$age = "";
-$gender = "";
-$height = "";
-$weight = "";
-$workout_days = "";
-$fitness_goal = "";
-$fitness_level = "";
-$activity_type = "";
-$activity_level = "";
-
-if (!isset($_POST['save_btn'])) {
     $sql_user = "SELECT * FROM users WHERE id=$id";
     $query_user = mysqli_query($db, $sql_user);
     foreach ($query_user as $row_user) {
@@ -33,7 +19,6 @@ if (!isset($_POST['save_btn'])) {
         $activity_type = $row_user['physical_activity'];
         $activity_level = $row_user['activity_level'];
     }
-}
 
 if (isset($_POST['save_btn'])) {
     $name_ = $_POST['name'];
